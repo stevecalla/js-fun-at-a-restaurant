@@ -19,6 +19,8 @@ function addMenuItem(pizzaRestaurant, menuItem) {
 }
 
 function removeMenuItem(pizzaRestaurant, menuItem, menu) {
+  console.log('a', pizzaRestaurant, 'b', menuItem, 'c', menu)
+
   if (pizzaRestaurant.menus[menu][0] === undefined) {
     return `Sorry, we don't sell ${menuItem}, try adding a new recipe!`;
   } else {
